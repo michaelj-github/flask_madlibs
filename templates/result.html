@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Madlibs!{% endblock %}
+  {% block content %}
+  <table>
+    <tr>
+      <th>
+        <h1>Your Story!</h1>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        {{thestory}}
+      </td>
+    </tr>
+  </table>
+    <section class = 'links'>
+      <br><a href='/'>Go to the Home Page</a><br>
+      <br><p id='demo'></p><br>
+    </section>
+{% endblock %}

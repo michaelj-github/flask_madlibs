@@ -1,0 +1,27 @@
+body {
+  font-family: cursive;
+  background-color: ivory;
+}
+
+h1 {
+  color: blue;
+}
+
+.formh1 {
+  padding: 10px;
+  background-color: pink;
+}
+
+table {
+  border-style: solid;
+  background-color: white;
+}
+
+td {
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.formtable {
+  padding: 20px;
+}

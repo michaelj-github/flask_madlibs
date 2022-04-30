@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Madlibs!{% endblock %}
+  {% block content %}
+    <h1>Home Page</h1>
+    <section class = 'homeform'>
+
+        <form action="/form">
+          <p>Please select a story:</p>
+          <input type="radio" id="shortstory" name="astory" value="short story" required>
+          <label for="astory">short story</label><br>
+          <input type="radio" id="story" name="astory" value="story" required>
+          <label for="astory">a story</label><br>
+          <input type="radio" id="longstory" name="astory" value="long story" required>
+          <label for="astory">a long story</label><br>
+          <br><button>Submit</button>
+        </form>
+
+    </section>
+  {% endblock %}

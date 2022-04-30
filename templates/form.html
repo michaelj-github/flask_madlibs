@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Madlibs!{% endblock %}
+  {% block content %}
+<form class="form" action="/result" onsubmit="return validateFormPage()">
+    <table class="formtable">
+      <tr>
+        <th colspan="2">
+          <h1 class="formh1">Madlibs!</h1>
+        </th>
+      </tr>
+      {% for prompt in thestory.prompts %}
+      <tr>
+        <td style="text-align:right; font-weight: bold;">
+          {{prompt + " = "}}
+        </td>
+        <td>
+          <input class="input" type="text" name={{prompt}} placeholder={{prompt}} required>
+        </td>
+      </tr>
+      {% endfor %}
+      <tfoot>
+        <tr>
+          <td><button>Submit</button></td>
+        </tr>
+      </tfoot>
+    </table>
+  </form>
+  <section class='links'>
+    <br><a href='/'>Go to the Home Page</a><br>
+  </section>
+{% endblock %}
